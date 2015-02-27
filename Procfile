@@ -1,1 +1,1 @@
-web: bundle exec jekyll server -p 4000
+web: bundle exec puma -t 8:32 -w 3 -p 4000
