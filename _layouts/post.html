@@ -1,15 +1,17 @@
 ---
 layout: default
 ---
-<div class="container">
+<div class="page">
+	<div class="container">
 
-  <header>
-    <h3>{{ page.title }}</h3>
-    <p>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+	  <header>
+	    <h3>{{ page.title }}</h3>
+	    <p>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+	  </header>
 
-  <article>
-    {{ content }}
-  </article>
+	  <article>
+	    {{ content }}
+	  </article>
 
+	</div>
 </div>
