@@ -4,9 +4,7 @@ html {
 }
 body {
     margin: 0 0 100px;
-    /* bottom = footer height */
 }
-
 
 .footer{
   background-color: #eee;
@@ -18,8 +16,11 @@ body {
   overflow:hidden;
 }
 
-
 body > .wrapper{
   height: auto;
   min-height: 100%;
+}
+
+.rainbow {
+  zoom : .1;
 }
