@@ -2,18 +2,18 @@
   <nav class="container">
     <div class="navbar-right">
       <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-      <div>
         {% for page in site.pages %}
           {% if page.title %}
-          <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          <div>
+            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          </div>
           {% endif %}
         {% endfor %}
-      </div>
     </div>
     <div class="navbar-left">
-      <h3>
-        {{site.title}}
-      </h3>
+      <h2>
+        <a class="msad-header" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      </h2>
     </div>
   </nav>
 </div>
